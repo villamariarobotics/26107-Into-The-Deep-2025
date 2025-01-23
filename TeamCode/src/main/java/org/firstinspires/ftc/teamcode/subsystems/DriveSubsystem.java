@@ -35,7 +35,7 @@ public class DriveSubsystem {
     // TO BE MEASURED!!!! ^^^^^^^^^^^^^^^^
     static float ANGLES_PER_SECOND = 1; // angle (in radians) that the robot turns in one second
     // TO BE MEASURED!!!! ^^^^^^^^^^^^^^^^
-    public void initialize(HardwareMap hwMap) {
+    public static void initialize(HardwareMap hwMap) {
         left_front_motor = hwMap.get(DcMotor.class, "left_front_motor");
         right_front_motor = hwMap.get(DcMotor.class, "right_front_motor");
         left_back_motor = hwMap.get(DcMotor.class, "left_back_motor");
