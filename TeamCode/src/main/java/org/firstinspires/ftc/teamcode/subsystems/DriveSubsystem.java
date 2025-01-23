@@ -30,7 +30,7 @@ public class DriveSubsystem {
     public float xPosition = 0; //distance in cm
     public float yPosition = 0; //distance in cm
 
-    public float rotation = 0; //in radians; 0 = starting rotation
+    public float rotation = 0; //in radians; 0 = starting rotations
     static float DISTANCE_PER_SECOND = 1; // distance (in cm) moved in one second at full power.
     // TO BE MEASURED!!!! ^^^^^^^^^^^^^^^^
     static float ANGLES_PER_SECOND = 1; // angle (in radians) that the robot turns in one second
