@@ -4,11 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-/**
- * DriveSubsystem is a class that contains the methods and fields necessary to control the robot's drive base
- */
-public class DriveSubsystem {
-
+public class ExtentionArmSubsystem {
 
     public static void initialize(@NonNull HardwareMap HwMap) {
     }
