@@ -17,7 +17,7 @@ public class ExtentionArmSubsystem {
     }
     public void handleControllerInput(Gamepad gamepad) {
         float y = gamepad.left_stick_y;
-        turnMotor(y);
+        turnMotor(y); 
     }
 
 }
