@@ -8,16 +8,22 @@ import org.firstinspires.ftc.teamcode.subsystems.ExtentionArmSubsystem;
 import org.firstinspires.ftc.teamcode.subsystems.PivotSubsystem;
 
 public class mainTeleopOpmod extends OpMode {
+    DriveSubsystem drive_base = new DriveSubsystem();
+    PivotSubsystem pivot = new PivotSubsystem();
+    ExtentionArmSubsystem extension = new ExtentionArmSubsystem();
+    EndEffectorSubsystem end_effector = new EndEffectorSubsystem();
     @Override
     public void init() {
-        DriveSubsystem.initialize(hardwareMap);
-        PivotSubsystem.initialize(hardwareMap);
-        ExtentionArmSubsystem.initialize(hardwareMap);
-        EndEffectorSubsystem.initialize(hardwareMap);
+        drive_base.initialize(hardwareMap);
+        pivot.initialize(hardwareMap);
+        extension.initialize(hardwareMap);
+        end_effector.initialize(hardwareMap);
     }
 
     @Override
     public void loop() {
+        drive_base.handleControllerInput(gamepad1);
+        extension.handleControllerInput(gamepad2);
 
     }
 }
